@@ -4,7 +4,7 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const Frame = ({ item, index }) => {
      return (
-          <div className='relative w-[380px] lg:w-[504px] p-4 project_outline m-auto transition-opacity duration-500 ease-in-out'>
+          <div className='relative w-full lg:w-[470px] p-4 project_outline m-auto transition-opacity duration-500 ease-in-out'>
                <div className='edge'></div>
                <Link
                     to={item.lien}

@@ -2,9 +2,9 @@ import React from 'react';
 
 const Footer = () => {
      return (
-          <footer className='mt-16'>
-               <div className='container mx-auto flex flex-col md:flex-row items-center justify-between gap-5 border-b-[1px] py-8	'>
-                    <div className='flex flex-col items-center mb-4 md:mb-0 text-gray-400'>
+          <footer className='mt-16 '>
+               <div className='container mx-auto flex flex-col md:flex-row items-center justify-between max-w-[1000px] gap-5 border-b-[1px] py-8	lg:ml-auto'>
+                    <div className='flex flex-col items-center mb-4 md:mb-0 text-gray-400 lg:ml-auto align-center'>
                          <div className='flex space-x-4'>
                               <a
                                    href='https://github.com/your-profile'
@@ -12,12 +12,12 @@ const Footer = () => {
                                    rel='noopener noreferrer'
                                    className='text-gray-400 hover:text-white flex flex-col items-center'
                               >
-                                   <span>Github</span>
+                                   <span className='text-xs'>Github</span>
                                    <svg
                                         xmlns='http://www.w3.org/2000/svg'
                                         fill='currentColor'
                                         viewBox='0 0 24 24'
-                                        className='h-6 w-6'
+                                        className='h-4 w-4'
                                    >
                                         <path
                                              fillRule='evenodd'
@@ -32,12 +32,12 @@ const Footer = () => {
                                    rel='noopener noreferrer'
                                    className='text-gray-400 hover:text-white flex flex-col justify-center items-center'
                               >
-                                   <span>Linkedin</span>
+                                   <span className='text-xs'>Linkedin</span>
                                    <svg
                                         xmlns='http://www.w3.org/2000/svg'
                                         fill='currentColor'
                                         viewBox='0 0 24 24'
-                                        className='h-6 w-6'
+                                        className='h-4 w-4'
                                    >
                                         <path
                                              fillRule='evenodd'
@@ -47,7 +47,7 @@ const Footer = () => {
                                    </svg>
                               </a>
                          </div>
-                         <p className='text-xs'>
+                         <p className='text-xs mt-5'>
                               © 2024 Daidone Marco. All Rights Reserved.
                          </p>
                     </div>
