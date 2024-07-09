@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-nav-pill {
+     backdrop-filter: blur(15px);
+     background-color: #50505029;
+     border: 2px solid #b5b5b580;
+     border-radius: 24px;
+     transition: box-shadow 1s cubic-bezier(0.23, 1, 0.32, 1),
+          border 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+.nav-indicator-glow {
+     box-shadow: 0 2px 25px 2px #fff;
+}
+
+.custom-glare-item {
+     background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.3),
+          rgba(255, 255, 255, 0)
+     );
+     pointer-events: none;
+     z-index: 1;
+     background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0) 5%,
+          rgba(255, 255, 255, 0.8) 35%,
+          #fff 50%,
+          rgba(255, 255, 255, 0.8) 65%,
+          rgba(0, 0, 0, 0) 95%
+     );
+     position: absolute;
+     top: 0%;
+     bottom: auto;
+     left: 0%;
+     right: 0%;
+}
+
+.custom-project-card {
+     transition: box-shadow 1s cubic-bezier(0.23, 1, 0.32, 1),
+          border 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.custom-project-card:hover {
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.custom-container {
+     opacity: 1;
+     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+          rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+     transform-style: preserve-3d;
+}
+.project_outline {
+     outline-offset: -1px;
+     background-color: rgba(242, 242, 242, 0.04);
+     border-radius: 24px;
+     outline: 1px solid rgba(242, 242, 242, 0.05);
+     align-self: stretch;
+     padding: 8px;
+     position: relative;
+     box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
+}
+
+.project-card {
+     background-image: linear-gradient(190deg, #252525, var(--background));
+     color: var(--on-background);
+     border: 1px solid #c9c9c9;
+     border-radius: 16px;
+     flex-direction: column;
+     padding-top: 32px;
+     padding-left: 28px;
+     padding-right: 28px;
+     text-decoration: none;
+     transition: border 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+     display: flex;
+     position: relative;
+     overflow: hidden;
+}
+.section {
+     height: 100vh;
+     transition: opacity 0.5s ease-in-out;
+}
+
+.section.hidden {
+     opacity: 0;
+}
+
+.section.visible {
+     opacity: 1;
+}
+
+.edge {
+     opacity: 1;
+     z-index: 1;
+     background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0) 5%,
+          rgba(255, 255, 255, 0.8) 35%,
+          #fff 50%,
+          rgba(255, 255, 255, 0.8) 65%,
+          rgba(0, 0, 0, 0) 95%
+     );
+     position: absolute;
+     top: 0%;
+     bottom: auto;
+     left: 0%;
+     right: 0%;
+}
+
+.glare_item_top {
+     z-index: 1;
+     background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0) 20%,
+          #fff 50%,
+          rgba(0, 0, 0, 0) 80%
+     );
+     position: absolute;
+     top: 0%;
+     bottom: auto;
+     left: 0%;
+     right: 0%;
+}
+
+.project-card-colour {
+     background-image: radial-gradient(
+               circle at 50% 0,
+               rgba(127, 207, 255, 0.2),
+               rgba(0, 0, 0, 0) 80%
+          ),
+          radial-gradient(circle at 50% 0, #035, rgba(0, 0, 0, 0));
+}
+
+@keyframes gradient {
+     0% {
+          background-position: 0% 0%;
+     }
+     50% {
+          background-position: 100% 100%;
+     }
+     100% {
+          background-position: 0% 0%;
+     }
+}
+
+body {
+     margin: 0;
+     height: 100vh;
+     background-color: hsla(180, 1%, 97%, 1);
+     background-image: radial-gradient(
+               at 81% 65%,
+               hsla(218, 98%, 94%, 1) 0px,
+               transparent 50%
+          ),
+          radial-gradient(
+               at 95% 99%,
+               hsla(39, 95%, 94%, 1) 0px,
+               transparent 50%
+          ),
+          radial-gradient(
+               at 48% 26%,
+               hsla(271, 77%, 94%, 1) 0px,
+               transparent 50%
+          ),
+          radial-gradient(
+               at 75% 26%,
+               hsla(197, 87%, 94%, 1) 0px,
+               transparent 50%
+          );
+     background-size: 500% 500%;
+     animation: gradient 9s ease infinite;
+}
