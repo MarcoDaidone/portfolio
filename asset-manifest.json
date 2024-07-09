@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.f05a03d6.css",
+    "main.js": "/portfolio/static/js/main.5ca31fca.js",
+    "static/js/453.a5c6f504.chunk.js": "/portfolio/static/js/453.a5c6f504.chunk.js",
+    "static/media/tripguide-892dd3b1.png": "/portfolio/static/media/tripguide-892dd3b1.991986c795ea140ba063.png",
+    "static/media/kasa.gif": "/portfolio/static/media/kasa.08293fda0c2f3b0fca00.gif",
+    "static/media/mmatv.gif": "/portfolio/static/media/mmatv.fed384b139efa8aadf24.gif",
+    "static/media/nft_dodo.gif": "/portfolio/static/media/nft_dodo.65f06e86cd642a2141ec.gif",
+    "static/media/grimoire.gif": "/portfolio/static/media/grimoire.3d872f19bbc61c66b6a8.gif",
+    "static/media/herobg-ecbfddc8.png": "/portfolio/static/media/herobg-ecbfddc8.ad33add2430e34307c33.png",
+    "static/media/jobit-ecb9d39c.png": "/portfolio/static/media/jobit-ecb9d39c.755da7149642fd049273.png",
+    "static/media/planity.gif": "/portfolio/static/media/planity.b9192dcc7de5b8e8d785.gif",
+    "static/media/wordle-demo.gif": "/portfolio/static/media/wordle-demo.af54e7e3c29a210a8afa.gif",
+    "static/media/jolismeuble-84fd87bb.jpg": "/portfolio/static/media/jolismeuble-84fd87bb.cc808b0f0cf50c128eb3.jpg",
+    "static/media/vidoleo-02520f7f.jpg": "/portfolio/static/media/vidoleo-02520f7f.e794adb0a9969b137224.jpg",
+    "static/media/vloug-a0cbb310.jpeg": "/portfolio/static/media/vloug-a0cbb310.a360898da394f042e83c.jpeg",
+    "static/media/web-0d05165f.png": "/portfolio/static/media/web-0d05165f.c0cb2cc13791a26822d3.png",
+    "static/media/victus-e087122a.png": "/portfolio/static/media/victus-e087122a.d005d11bd4a09b732ae7.png",
+    "static/media/logo-marco-be0771e1.png": "/portfolio/static/media/logo-marco-be0771e1.2e6db125e535a37b95f1.png",
+    "static/media/backend-565fc01f.png": "/portfolio/static/media/backend-565fc01f.08c8d93b8142c41a9e63.png",
+    "static/media/favicon-marco-3db8afe6.png": "/portfolio/static/media/favicon-marco-3db8afe6.4b40d2abfda57f25fd93.png",
+    "static/media/mobile-896ef2f5.png": "/portfolio/static/media/mobile-896ef2f5.15e7b89f1018dcdba6e7.png",
+    "static/media/creator-dbbffaec.png": "/portfolio/static/media/creator-dbbffaec.f8923ce18390029928ac.png",
+    "static/media/starbucks-af2a76fc.png": "/portfolio/static/media/starbucks-af2a76fc.c086db5b166ea2f14de1.png",
+    "static/media/mntonline-d83b5f7e.png": "/portfolio/static/media/mntonline-d83b5f7e.ce58231139c10581bf57.png",
+    "static/media/photoshop-04fffea7.png": "/portfolio/static/media/photoshop-04fffea7.25277e7816220a0b9221.png",
+    "static/media/linkedin-4ff496a1.png": "/portfolio/static/media/linkedin-4ff496a1.500ca075900d92dfd295.png",
+    "static/media/github-3b4e1609.png": "/portfolio/static/media/github-3b4e1609.ed1c06d925fff0b57e32.png",
+    "static/media/shoozy-841a0422.png": "/portfolio/static/media/shoozy-841a0422.3c1dd371bd48f1f38bb5.png",
+    "static/media/close-ad0e0ca6.svg": "/portfolio/static/media/close-ad0e0ca6.52ab0d39b2c514b83221.svg",
+    "static/media/menu-242d80a8.svg": "/portfolio/static/media/menu-242d80a8.acf64a387fc724c7a47a.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/threejs-1d0654a8.svg": "/portfolio/static/media/threejs-1d0654a8.34d1dab4caddf9c51437.svg",
+    "main.f05a03d6.css.map": "/portfolio/static/css/main.f05a03d6.css.map",
+    "main.5ca31fca.js.map": "/portfolio/static/js/main.5ca31fca.js.map",
+    "453.a5c6f504.chunk.js.map": "/portfolio/static/js/453.a5c6f504.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f05a03d6.css",
+    "static/js/main.5ca31fca.js"
+  ]
+}
