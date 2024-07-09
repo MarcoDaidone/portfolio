@@ -12,9 +12,9 @@ function App() {
                <Routes>
                     {' '}
                     {/* Utilisez Routes pour définir vos routes */}
-                    <Route path='/portfolio' element={<Home />} />{' '}
+                    <Route path='/' element={<Home />} />{' '}
                     {/* Utilisez 'element' pour définir le composant à rendre */}
-                    <Route path='/portfolio/about' element={<About />} />
+                    <Route path='/about' element={<About />} />
                     <Route path='*' element={<Home />} />
                </Routes>
           </Layers>

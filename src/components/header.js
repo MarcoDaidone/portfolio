@@ -7,9 +7,9 @@ const Header = () => {
      const location = useLocation();
 
      useEffect(() => {
-          if (location.pathname === '/portfolio') {
+          if (location.pathname === '/') {
                setActiveTab('work');
-          } else if (location.pathname === '/portfolio/about') {
+          } else if (location.pathname === '/about') {
                setActiveTab('info');
           }
      }, [location]);
@@ -17,9 +17,9 @@ const Header = () => {
      const handleTabChange = (tab) => {
           setActiveTab(tab);
           if (tab === 'work') {
-               navigate('/portfolio');
+               navigate('/');
           } else if (tab === 'info') {
-               navigate('/portfolio/about');
+               navigate('/about');
           }
      };
 
