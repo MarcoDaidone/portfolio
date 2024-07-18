@@ -56,6 +56,7 @@ const Header = () => {
                               >
                                    <div className='text-nav-toggle'>About</div>
                               </button>
+
                               <div
                                    className={`nav-indicator-glow nav-indicator-pill absolute top-0 h-1 w-6 rounded bg-gray-100 transition-all duration-300 ease-in-out ${
                                         activeTab === 'info'

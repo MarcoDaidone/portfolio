@@ -9,13 +9,18 @@ const Home = (title, image) => {
      const [modalIsOpen, setModalIsOpen] = useState(false);
      const [newData, setNewData] = useState(Data[0]);
      const [activeData, setActiveData] = useState(0);
+     const [isScrollVisible, setScrollVisible] = useState(false);
 
      const ref = useRef(null);
      const handleYearClick = (index) => {
           const filteredData = Data[index];
           setNewData(filteredData);
           setActiveData(index);
-          ref.current.scrollIntoView({ behavior: 'smooth' });
+          const isMobile = window.matchMedia('(max-width: 768px)').matches;
+          if (isMobile) {
+               // if mobile
+               ref.current.scrollIntoView({ behavior: 'smooth' });
+          }
      };
 
      const closeModal = () => {
@@ -29,12 +34,15 @@ const Home = (title, image) => {
                className='flex flex-col max-w-6xl lg:flex-row-reverse justify-between m-auto relative w-full'
           >
                {newData && (
-                    <section className='scroll max-w-lg m-auto flex mt-20 w-full'>
+                    <section className='scroll max-w-lg m-auto flex mt-20 lg:h-[500px] lg:mt-6 w-full'>
                          <Frame item={newData} />
                     </section>
                )}
 
-               <div className='flex flex-col gap-1 mt-20 lg:absolute left-0 lg:max-w-[240px] justify-between w-full '>
+               <div
+                    onMouseEnter={() => setScrollVisible(!isScrollVisible)}
+                    className='flex flex-col gap-1 mt-20 lg:absolute lg:mt-6 left-0 lg:max-w-[240px] lg:h-[500px] overflow-scroll justify-between w-full '
+               >
                     {Data.map((item, index) => {
                          return (
                               <div

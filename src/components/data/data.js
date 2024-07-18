@@ -28,6 +28,13 @@ const Data = [
           lien: 'https://github.com/MarcoDaidone/Mon_Vieux_Grimoire',
      },
      {
+          titre: 'Portfolio photographe',
+          years: '2023',
+          description: 'Sophie bruel',
+          image: 'sophie.gif',
+          lien: 'https://github.com/MarcoDaidone/sophieBluel',
+     },
+     {
           titre: 'Site de réservation enligne',
           years: '2023',
           description: 'Kasa',
