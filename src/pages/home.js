@@ -9,7 +9,6 @@ const Home = (title, image) => {
      const [modalIsOpen, setModalIsOpen] = useState(false);
      const [newData, setNewData] = useState(Data[0]);
      const [activeData, setActiveData] = useState(0);
-     const [isScrollVisible, setScrollVisible] = useState(false);
 
      const ref = useRef(null);
      const handleYearClick = (index) => {
@@ -39,10 +38,7 @@ const Home = (title, image) => {
                     </section>
                )}
 
-               <div
-                    onMouseEnter={() => setScrollVisible(!isScrollVisible)}
-                    className='flex flex-col gap-1 mt-20 lg:absolute lg:mt-6 left-0 lg:max-w-[240px] lg:h-[500px] overflow-scroll justify-between w-full '
-               >
+               <div className='flex flex-col gap-1 mt-20 lg:absolute lg:mt-6 left-0 lg:max-w-[240px] lg:h-[500px] overflow-scroll justify-between w-full '>
                     {Data.map((item, index) => {
                          return (
                               <div
