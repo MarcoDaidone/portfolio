@@ -117,7 +117,7 @@ const Frame = ({ item, index }) => {
                                         </div>
                                         <div className='flex items-center w-full'>
                                              <button
-                                                  className='btn ml-auto absolute top-5 right-5'
+                                                  className='btn ml-auto absolute top-5 right-5 z-40'
                                                   onClick={closeModal}
                                              >
                                                   Close
