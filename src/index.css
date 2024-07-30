@@ -148,7 +148,6 @@
 
 body {
      margin: 0;
-     height: 100vh;
      background-color: hsla(180, 1%, 97%, 1);
      background-image: radial-gradient(
                at 81% 65%,

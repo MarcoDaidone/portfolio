@@ -1,16 +1,23 @@
 import React from 'react';
 
 const Footer = () => {
+     const handleClick = () => {
+          const email = 'daidone.marco38280@gmail.com';
+          const subject = 'Hello Marco';
+          window.location.href = `mailto:${email}?subject=${encodeURIComponent(
+               subject
+          )}`;
+     };
      return (
           <footer className='mt-16 '>
                <div className='container mx-auto flex flex-col md:flex-row items-center justify-between max-w-[1000px] gap-5 border-b-[1px] py-8	lg:ml-auto'>
-                    <div className='flex flex-col items-center mb-4 md:mb-0 text-gray-400 lg:ml-auto align-center lg:mt-[-247px]'>
-                         <div className='flex space-x-4'>
+                    <div className='flex flex-col items-center mb-4 md:mb-0 text-gray-400 lg:ml-auto align-center lg:mt-[-326px]'>
+                         <div className='flex space-x-4 z-20'>
                               <a
                                    href='https://github.com/your-profile'
                                    target='_blank'
                                    rel='noopener noreferrer'
-                                   className='text-gray-400 hover:text-white flex flex-col items-center'
+                                   className='text-gray-400 hover:text-black flex flex-col items-center'
                               >
                                    <span className='text-xs'>Github</span>
                                    <svg
@@ -30,7 +37,7 @@ const Footer = () => {
                                    href='https://www.linkedin.com/in/your-profile'
                                    target='_blank'
                                    rel='noopener noreferrer'
-                                   className='text-gray-400 hover:text-white flex flex-col justify-center items-center'
+                                   className='text-gray-400 hover:text-black flex flex-col justify-center items-center'
                               >
                                    <span className='text-xs'>Linkedin</span>
                                    <svg
@@ -47,6 +54,12 @@ const Footer = () => {
                                    </svg>
                               </a>
                          </div>
+                         <button
+                              onClick={handleClick}
+                              className='rounded-md px-5 decoration-solid text-gray-400 py-2.5 relative mt-5  border-gray-400 inline-flex items-center justify-center p-0.5 mb-2 me-2 '
+                         >
+                              Contact
+                         </button>
                          <p className='text-xs mt-5'>
                               © 2024 Daidone Marco. All Rights Reserved.
                          </p>
