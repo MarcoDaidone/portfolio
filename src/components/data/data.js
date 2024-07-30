@@ -2,7 +2,7 @@ const Data = [
      {
           titre: 'Planity',
           years: '2024',
-          description: 'Générateur de script',
+          description: 'Script Generator',
           mission: [
                'Developed a script generator to assist customers in installing their own appointment modules.',
                'Utilized React and Redux to build and manage the script generator.',
@@ -37,7 +37,7 @@ const Data = [
           ],
      },
      {
-          titre: 'Site de notation livre',
+          titre: 'Book Rating Site',
           years: '2023',
           description: 'Mon vieux grimoire',
           image: 'grimoire.gif',
@@ -50,7 +50,7 @@ const Data = [
           tech: ['Node.js', 'Express', 'MongoDB'],
      },
      {
-          titre: 'Portfolio photographe',
+          titre: 'Photographer Portfolio',
           years: '2023',
           description: 'Sophie Bruel',
           image: 'sophie.gif',
@@ -63,7 +63,7 @@ const Data = [
           tech: ['JavaScript'],
      },
      {
-          titre: 'Site de réservation en ligne',
+          titre: 'Online Booking Site',
           years: '2023',
           description: 'Kasa',
           image: 'kasa.gif',
@@ -78,7 +78,7 @@ const Data = [
      {
           titre: 'Plateforme NFT',
           years: '2023',
-          description: 'Acheter et vendre des NFT ETH',
+          description: 'Buy and Sell ETH NFTs',
           image: 'nft_dodo.gif',
           lien: 'https://github.com/MarcoDaidone/nftdodo',
           mission: [
@@ -90,7 +90,7 @@ const Data = [
      {
           titre: 'Jolie Meubles',
           years: '2022',
-          description: 'Comparateur de prix',
+          description: 'Price Comparison Tool',
           image: 'jolismeuble-84fd87bb.jpg',
           lien: 'https://github.com/MarcoDaidone/jolismeubles',
           mission: [

@@ -14,7 +14,7 @@ const Footer = () => {
                     <div className='flex flex-col items-center mb-4 md:mb-0 text-gray-400 lg:ml-auto align-center lg:mt-[-326px]'>
                          <div className='flex space-x-4 z-20'>
                               <a
-                                   href='https://github.com/your-profile'
+                                   href='https://github.com/MarcoDaidone'
                                    target='_blank'
                                    rel='noopener noreferrer'
                                    className='text-gray-400 hover:text-black flex flex-col items-center'
@@ -34,7 +34,7 @@ const Footer = () => {
                                    </svg>
                               </a>
                               <a
-                                   href='https://www.linkedin.com/in/your-profile'
+                                   href='https://www.linkedin.com/in/marco-d-b9a313201/'
                                    target='_blank'
                                    rel='noopener noreferrer'
                                    className='text-gray-400 hover:text-black flex flex-col justify-center items-center'

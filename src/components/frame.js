@@ -33,7 +33,7 @@ const Frame = ({ item, index }) => {
                     <Modal ref={modalRef} onBackdropClick={handleBackdropClick}>
                          {isModalOpen && (
                               <RemoveScroll>
-                                   <div className='bg-base-100  max-w-[600px] max-h-[700px] h-[100svh] flex flex-col items-center justify-start pt-16 '>
+                                   <div className='bg-base-100 overflow-y-scroll  max-w-[600px] max-h-[700px] h-[100svh] flex flex-col items-center justify-start pt-16 '>
                                         <div>
                                              <img
                                                   src={require(`../img/${item.image}`)}
@@ -46,7 +46,7 @@ const Frame = ({ item, index }) => {
                                                   {item.titre}
                                              </h2>
                                              <span>
-                                                  <span>Année:</span>{' '}
+                                                  <span>Year:</span>{' '}
                                                   <span className='font-bold'>
                                                        {item.years}
                                                   </span>
@@ -78,9 +78,9 @@ const Frame = ({ item, index }) => {
                                                   </span>
                                              </span>
                                              <span className='mt-3'>
-                                                  Technologies utilisées:
+                                                  Tech stacks
                                              </span>
-                                             <span className='flex flex-row'>
+                                             <span className='flex flex-row flex-wrap'>
                                                   {item.tech.map((item) => {
                                                        return (
                                                             <span className='p-2 text-gray-400 rounded-xl text-sm'>
@@ -89,7 +89,7 @@ const Frame = ({ item, index }) => {
                                                        );
                                                   })}
                                              </span>
-                                             <div className='flex flex-row gap-3 mt-3'>
+                                             <div className='flex flex-row gap-3 mt-3 flex-wrap'>
                                                   <span className='flex flx-row'>
                                                        <svg
                                                             xmlns='http://www.w3.org/2000/svg'
@@ -103,13 +103,13 @@ const Frame = ({ item, index }) => {
                                                                  clipRule='evenodd'
                                                             />{' '}
                                                        </svg>{' '}
-                                                       Lien github:
+                                                       Github:
                                                   </span>
                                                   <a
                                                        href='https://github.com/your-profile'
                                                        target='_blank'
                                                        rel='noopener noreferrer'
-                                                       className='text-gray-400 text-sm hover:text-black flex flex-row items-center underline decoration-solid'
+                                                       className='whitespace-nowrap overflow-hidden text-ellipsis w-64 text-gray-400 text-sm hover:text-black flex flex-row items-center underline decoration-solid'
                                                   >
                                                        {item.lien}
                                                   </a>
