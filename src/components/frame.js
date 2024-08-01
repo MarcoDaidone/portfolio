@@ -2,7 +2,6 @@ import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
 import Modal from './modal';
-import { RemoveScroll } from 'react-remove-scroll';
 
 const Frame = ({ item, index }) => {
      const modalRef = useRef(null);

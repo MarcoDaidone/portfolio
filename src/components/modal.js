@@ -1,5 +1,4 @@
 import { forwardRef } from 'react';
-import { RemoveScroll } from 'react-remove-scroll';
 
 const Modal = forwardRef(
      ({ children, modalBoxClassName, onBackdropClick }, ref) => {
