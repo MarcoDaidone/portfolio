@@ -14,7 +14,9 @@
 .nav-indicator-glow {
      box-shadow: 0 2px 25px 2px #fff;
 }
-
+body.modal-open {
+     overflow: hidden;
+}
 .custom-glare-item {
      background: linear-gradient(
           135deg,

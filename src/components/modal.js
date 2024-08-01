@@ -1,4 +1,5 @@
 import { forwardRef } from 'react';
+import { RemoveScroll } from 'react-remove-scroll';
 
 const Modal = forwardRef(
      ({ children, modalBoxClassName, onBackdropClick }, ref) => {
@@ -16,6 +17,7 @@ const Modal = forwardRef(
                     >
                          {children}
                     </div>
+
                     <form method='dialog' className='modal-backdrop'>
                          <button
                               type='button'

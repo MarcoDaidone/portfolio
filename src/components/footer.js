@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
-const Footer = () => {
+const Footer = ({ margin, top }) => {
      const handleClick = () => {
           const email = 'daidone.marco38280@gmail.com';
           const subject = 'Hello Marco';
@@ -8,10 +9,27 @@ const Footer = () => {
                subject
           )}`;
      };
+     const location = useLocation();
+     const [footerStyle, setFooterStyle] = useState('');
+
+     useEffect(() => {
+          if (location.pathname === '/') {
+               setFooterStyle(true);
+          } else if (location.pathname === '/about') {
+               setFooterStyle(false);
+          }
+     }, [location]);
+
      return (
           <footer className='mt-16 '>
                <div className='container mx-auto flex flex-col md:flex-row items-center justify-between max-w-[1000px] gap-5 border-b-[1px] py-8	lg:ml-auto'>
-                    <div className='flex flex-col items-center mb-4 md:mb-0 text-gray-400 lg:ml-auto align-center lg:mt-[-326px]'>
+                    <div
+                         className={`flex flex-col items-center mb-4 md:mb-0 text-gray-400  align-center ${
+                              footerStyle
+                                   ? 'lg:mt-[-326px] lg:ml-auto'
+                                   : 'lg:m-auto lg:mt-[-26px]'
+                         }`}
+                    >
                          <div className='flex space-x-4 z-20'>
                               <a
                                    href='https://github.com/MarcoDaidone'
