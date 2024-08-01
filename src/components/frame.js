@@ -33,7 +33,7 @@ const Frame = ({ item, index }) => {
                <div>
                     <Modal ref={modalRef} onBackdropClick={handleBackdropClick}>
                          {isModalOpen && (
-                              <div className='bg-base-100 overflow-scroll  max-w-[600px] max-h-[700px] flex flex-col items-center justify-start pt-16 '>
+                              <div className='bg-base-100 max-w-[600px] max-h-[700px] flex flex-col items-center justify-start pt-16 '>
                                    <div>
                                         <img
                                              src={require(`../img/${item.image}`)}
